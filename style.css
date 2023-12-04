@@ -1,0 +1,359 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rokkitt', serif;
+    overflow-x: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+p{
+    text-align: center;
+}
+button{
+    cursor: pointer;
+}
+.navbar-section{
+    background-image: url('/Images/Rectangle\ 1.png');
+    height: 768px;
+    width: 100%;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px 0px 120px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 430px;
+    cursor: pointer;
+}
+.list-contact{
+    border: 1px solid #00DBD0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.logo-image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 235px;
+}
+
+.menu{
+    display: none;
+}
+.mid-section{
+    padding: 15px 0px 0px 120px;
+    display: flex;
+    height: 100vh;
+}
+.text-section{
+    padding-top: 100px;
+    width: 45%;
+}
+h2{
+    font-weight: 200;
+    font-size: 36px;
+    margin: 15px 20px 0px 0px;
+
+}
+h1{
+    font-size: 56px;
+    margin: 0px;
+    font-weight: bold;
+}
+.text-section p{
+    font-size: 20px;
+    text-align: left;
+}
+.header-photo{
+    width: 55%;
+}
+.header-photo img{
+    object-fit: contain;
+    position: absolute;
+    right: -30%;
+}
+
+
+.button-41 {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #00DBD0, #2c9792);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 144px;
+  z-index: 9;
+  border: 0;
+  margin-top: 30px;
+}
+
+.button-41:hover {
+  background: #63c2bd;
+}
+.welcome-to-nature{
+    background-color: white;
+    height: 55vh;
+    margin: 70px;
+    padding-top: 60px;
+
+}
+.welcome-to-nature img{
+    width: 40px;
+}
+.welcome-to-nature-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:35px
+}
+.welcome-to-nature-text h3{
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.welcome-to-nature-text p{
+    width: 500px;
+    font-size: 16px;
+    text-align: center;
+}
+.card{
+    border: 1px dotted black;
+    width: 160px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+.card:hover{
+    color: white;
+    border: none;
+    background-color: #00DBD0;
+}
+.card img:hover{
+    filter: brightness(0) invert(1); 
+}
+
+.welcome-to-nature-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap:wrap;
+    gap: 36px;
+}
+.presented-images img{
+    width: 108.06px;
+    height: 148.76px;
+}
+.presented-images{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 140px;
+}
+.profile-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.profile-image h4{
+    font-size: 26px;
+    
+}
+.profile-image p{
+    font-size: 16px;
+}
+.profile-comma-img{
+    width: 40px;
+}
+.profile-photo{
+    width: 70px;
+}
+.profile-stars{
+    width: 80px;
+}
+.profile{
+    height: 50vh;
+}
+.profile p{
+    width: 568px;
+    font-size: 16px;
+}
+.subscribe p{
+    width: 568px;
+    font-size: 16px;
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.subscribe h4{
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0px;
+}
+.subscribe button{
+    background-color: #00DBD0;
+    width: 167px;
+    height: 56px;
+    color: white;
+    border: none;
+    border-radius: 40px;
+}
+.subscribe input{
+    width: 167px;
+    height: 69px;
+    border: none;
+    border-radius: 40px;
+    padding: 0px 82px;
+}
+.profile-subscribe{
+    position: relative;
+}
+.subscribe-img1{
+    position: absolute;
+    right: 60%;
+    bottom: 50%;
+    object-fit: none;
+}
+.subscribe-img2{
+    position: absolute;
+    bottom: 58%;
+    left: 50%;
+    object-fit: none;
+
+}
+.blog-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blog-card button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.read-our-blog-text img{
+    width: 40px;
+}
+.read-our-blog-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.read-our-blog{
+    margin: 70px;
+
+}
+.read-our-blog h3{
+    font-size: 36px;
+}
+.read-our-blog-p{
+    font-size: 16px;
+    width: 568px;
+}
+.blog-cards{
+    gap: 50px;
+  
+}
+.blog-card{
+    width: 278px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    color: white;
+    height: 50vh;
+    background-image: url('/Images/footer\ image.png');
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 50px;
+}
+.footer-logo{
+    width: 30%;
+
+}
+.footer-logo p{
+    text-align: left;
+    font-size: 14px;
+}
+.footer-logo img{
+    width: 174px;
+    height: 57px;
+}
+.about-us ul{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: start;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+.about-us h5{
+    font-size: 16px;
+}
+.follow-us{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.follow-us h5{
+    font-size: 16px;
+}
+.follow-us-list-items ul{
+    display:flex;
+    /* flex-direction: column; */
+    align-items: start;
+    margin: 0;
+    padding: 0;
+    /* gap: 16px; */
+}
+.follow-us-list-items ul li{
+    font-size: 28px;
+}
