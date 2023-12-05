@@ -1,12 +1,149 @@
-@media screen and (max-width:768px) {
-    ul{
-        
-        width: 390px;
-    }
+@media screen and (max-width: 1120px) {
+  .subscribe-img1 {
+    display: none;
+  }
+  .subscribe-img2 {
+    display: none;
+  }
 }
-@media screen and (max-width:700px) {
-    ul{
-        
-        width: 300px;
+@media screen and (max-width: 992px) {
+  ul {
+    width: 360px;
+    font-size: 14px;
+  }
+  .navbar {
+    padding: 15px 30px 0px 30px;
+  }
+  .mid-section {
+    padding: 15px 30px 0px 30px;
+  }
+  .text-section {
+    position: absolute;
+
+    z-index: 999999;
+  }
+  .text-section p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  ul {
+    width: 390px;
+  }
+  .header-photo img {
+    display: none;
+  }
+  .text-section {
+    width: 90%;
+  }
+  .welcome-to-nature {
+    margin: 20px;
+  }
+  .presented-images {
+    padding: 15px 20px;
+  }
+  .profile {
+    margin: 20px;
+  }
+  .profile p {
+    width: 100%;
+  }
+  .profile-subscribe {
+    margin: 20px;
+  }
+  .profile-subscribe p {
+    width: 100%;
+  }
+  .subscribe input {
+    width: 70px;
+    height: 36px;
+    padding: 0px 32px;
+  }
+  .subscribe input::placeholder {
+    font-size: 12px;
+    
+  }
+  .subscribe button{
+    width: 70px;
+    height: 36px;
+    font-size: 12px;
+  }
+  .about-us,
+  .follow-us {
+    
+    width: 130px;
+  }
+  .follow-us ul {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  ul {
+    width: 300px;
+    font-size: 14px;
+  }
+  .navbar {
+    padding: 15px 28px 0px 28px;
+  }
+  .list-contact {
+    padding: 6px;
+  }
+}
+@media screen and (max-width: 576px) {
+  ul {
+    width: 280px;
+    font-size: 12px;
+  }
+  .navbar {
+    padding: 10px 10px 0px 10px;
+    justify-content: center;
+  }
+ 
+  .welcome-to-nature-text h3 {
+    font-size: 30px;
+  }
+  .welcome-to-nature-text p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .welcome-to-nature-cards {
+    margin-top: 10px;
+    gap: 8px;
+  }
+  .presented-images {
+    justify-content: center;
+  }
+  
+}
+@media screen and (max-width: 450px) {
+    
+    .list-items{
+     display: none;
+     flex-direction: column; 
     }
+    .menu{
+        display:block;
+        cursor: pointer;
+    }
+    .menu i{
+        font-size: 30px;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .menu-checkbox:checked + .menu {
+        display: none;
+      }
+    
+      .menu-checkbox:checked + .menu + .list-items {
+        display: flex;
+      }
+    
+  }
+@media screen and (max-width: 350px) {
+  ul {
+    width: 280px;
+    font-size: 12px;
+  }
+  
 }

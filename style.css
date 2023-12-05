@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rokkitt', serif;
+    font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
 }
 img{
@@ -17,7 +17,7 @@ button{
 }
 .navbar-section{
     background-image: url('/Images/Rectangle\ 1.png');
-    height: 768px;
+    height: 580px;
     width: 100%;
     position: relative;
 }
@@ -25,7 +25,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 60px 0px 120px;
+    padding: 15px 120px 0px 120px;
 }
 ul{
     list-style-type: none;
@@ -36,8 +36,8 @@ ul{
     cursor: pointer;
 }
 .list-contact{
-    border: 1px solid #00DBD0;
-    padding: 10px;
+    border: 2px solid #00DBD0;
+    padding: 10px 20px;
     border-radius: 10px;
 }
 
@@ -47,7 +47,10 @@ ul{
     justify-content: space-between;
     width: 235px;
 }
-
+.list-items{
+    margin: 0px;
+    color:#374B5C;
+}
 .menu{
     display: none;
 }
@@ -60,16 +63,19 @@ ul{
     padding-top: 100px;
     width: 45%;
 }
-h2{
+.text-section h2{
     font-weight: 200;
     font-size: 36px;
     margin: 15px 20px 0px 0px;
+    color:#374B5C;
 
 }
-h1{
+.text-section h1{
     font-size: 56px;
     margin: 0px;
     font-weight: bold;
+    color:#374B5C;
+
 }
 .text-section p{
     font-size: 20px;
@@ -119,9 +125,8 @@ h1{
   background: #63c2bd;
 }
 .welcome-to-nature{
-    background-color: white;
-    height: 55vh;
-    margin: 70px;
+    background: url('./Images/Rectangle\ 46.png');
+    padding: 70px;
     padding-top: 60px;
 
 }
@@ -139,7 +144,7 @@ h1{
     font-size: 36px;
     margin-top: 0px;
     margin-bottom: 0px;
-
+    text-align: center;
 }
 .welcome-to-nature-text p{
     width: 500px;
@@ -147,8 +152,9 @@ h1{
     text-align: center;
 }
 .card{
-    border: 1px dotted black;
-    width: 160px;
+    border: 2px dotted black;
+    width: 191.69px;
+    height: 200.9px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -161,10 +167,22 @@ h1{
     border: none;
     background-color: #00DBD0;
 }
-.card img:hover{
-    filter: brightness(0) invert(1); 
+.card:hover .image1{
+    display: none;
+}
+.card:hover .image2{
+    display: block;
+}
+.image2{
+    display: none;
 }
 
+.card h4{
+    margin: 15px 0px;
+}
+.card p{
+    margin: 0px;
+}
 .welcome-to-nature-cards{
     display: flex;
     justify-content: center;
@@ -174,6 +192,7 @@ h1{
 }
 .presented-images img{
     width: 108.06px;
+    object-fit: contain;
     height: 148.76px;
 }
 .presented-images{
@@ -182,6 +201,7 @@ h1{
     align-items: center;
     justify-content: space-between;
     padding: 40px 140px;
+    gap: 20px;
 }
 .profile-image{
     display: flex;
@@ -192,22 +212,28 @@ h1{
 }
 .profile-image h4{
     font-size: 26px;
-    
+    margin: 5px;    
 }
 .profile-image p{
     font-size: 16px;
 }
 .profile-comma-img{
-    width: 40px;
+    width: 60px;
+    height: 50px;
 }
 .profile-photo{
-    width: 70px;
+    width: 97px;
+    height: 97px;
 }
 .profile-stars{
-    width: 80px;
+    width: 126px;
+    height: 20px;
 }
 .profile{
-    height: 50vh;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .profile p{
     width: 568px;
@@ -222,15 +248,16 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+
 }
 
 .subscribe h4{
     font-size: 36px;
     font-weight: normal;
     margin: 0px;
+    text-align: center;
 }
-.subscribe button{
+/* .subscribe button{
     background-color: #00DBD0;
     width: 167px;
     height: 56px;
@@ -241,18 +268,45 @@ h1{
 .subscribe input{
     width: 167px;
     height: 69px;
+    border: 1px solid #00DBD0;
+    border-radius: 40px;
+    padding: 0px 40px;
+} */
+
+.input {
+    display: flex;
+    align-items: stretch; /* Make the items stretch to the same height */
+  }
+  
+  .input input {
+    flex: 1; /* Allow the input to take the remaining space */
+    height: 56px; /* Set the height to match the button */
     border: none;
     border-radius: 40px;
-    padding: 0px 82px;
-}
+    padding: 0 20px; /* Adjust padding as needed */
+  }
+  .input input:focus {
+    border: 1px solid #00DBD0;
+    outline: none; /* Optional: Remove the default browser outline */
+  }
+  
+  .input button {
+    background-color: #00DBD0;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    width: 167px;
+    height: 56px; /* Set the height to match the input */
+  }
 .profile-subscribe{
     position: relative;
 }
 .subscribe-img1{
     position: absolute;
-    right: 60%;
+    right: 62%;
     bottom: 50%;
     object-fit: none;
+    
 }
 .subscribe-img2{
     position: absolute;
@@ -271,6 +325,9 @@ h1{
     background: none;
     cursor: pointer;
 }
+.blog-card img:hover {
+    filter: brightness(0) invert(1);
+  }
 .read-our-blog-text img{
     width: 40px;
 }
@@ -287,6 +344,8 @@ h1{
 }
 .read-our-blog h3{
     font-size: 36px;
+    text-align: center;
+    margin: 0px;
 }
 .read-our-blog-p{
     font-size: 16px;
@@ -294,7 +353,7 @@ h1{
 }
 .blog-cards{
     gap: 50px;
-  
+    flex-wrap: wrap;
 }
 .blog-card{
     width: 278px;
@@ -304,56 +363,99 @@ h1{
     align-items: center;
     justify-content: center;
 }
-footer{
-    color: white;
-    height: 50vh;
-    background-image: url('/Images/footer\ image.png');
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0px 50px;
-}
-.footer-logo{
-    width: 30%;
 
-}
-.footer-logo p{
+footer {
+    padding: 4rem;
+    background-position: center;
+    background-size: cover;
+    background-image: url('/Images/footer\ image.png');
+    color: #fff; 
+    display: flex;
+    /* padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; */
+  }
+  
+  .footer-logo img {
+    width: 90px; 
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+    font-size: 14px;
+    line-height: 1.5;
     text-align: left;
-    font-size: 14px;
-}
-.footer-logo img{
-    width: 174px;
-    height: 57px;
-}
-.about-us ul{
-    display: flex;
+  }
+  
+  .footer-logo span {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .about-us,
+  .follow-us {
+    flex: 1;
+    margin: 0 20px;
+    width: 200px;
+  }
+
+  
+  .about-us h5,
+  .follow-us h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .line {
+    height: 2px;
+    width: 30px;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+  .ul-list{
+    text-align: left;
+
+  }
+  .about-us ul {
     list-style: none;
-    flex-direction: column;
-    align-items: start;
-    font-size: 14px;
-    margin: 0;
     padding: 0;
-    gap: 16px;
-}
-.about-us h5{
-    font-size: 16px;
-}
-.follow-us{
+    margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: start;
-}
-.follow-us h5{
-    font-size: 16px;
-}
-.follow-us-list-items ul{
-    display:flex;
-    /* flex-direction: column; */
-    align-items: start;
-    margin: 0;
+    align-items: flex-start;
+  }
+  .follow-us ul {
+    list-style: none;
     padding: 0;
-    /* gap: 16px; */
-}
-.follow-us-list-items ul li{
-    font-size: 28px;
-}
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .about-us li,
+  .follow-us li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .follow-us-list-items ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .follow-us-list-items li {
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  
+  /* Add additional styling for font-awesome icons if needed */
+  
