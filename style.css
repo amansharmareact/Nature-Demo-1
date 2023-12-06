@@ -4,13 +4,15 @@ body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+  color: #374B5C;
 }
 img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 p{
     text-align: center;
+    line-height: 35px;
 }
 button{
     cursor: pointer;
@@ -25,15 +27,22 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 120px 0px 120px;
+    padding: 15px 66px 0px 120px;
 }
-ul{
+nav ul{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 430px;
-    cursor: pointer;
+    width: 600px;
+    cursor: pointer;   
+}
+nav ul li{
+    font-size: 20px;
+}
+nav{
+    z-index: 9999;
+
 }
 .list-contact{
     border: 2px solid #00DBD0;
@@ -51,13 +60,17 @@ ul{
     margin: 0px;
     color:#374B5C;
 }
+.list-items li:hover{
+    color:#00DBD0;
+    cursor: pointer;
+}
 .menu{
     display: none;
 }
 .mid-section{
     padding: 15px 0px 0px 120px;
     display: flex;
-    height: 100vh;
+   
 }
 .text-section{
     padding-top: 100px;
@@ -87,7 +100,9 @@ ul{
 .header-photo img{
     object-fit: contain;
     position: absolute;
-    right: -30%;
+    right: 0;
+    bottom: -3%;
+    height: 100vh;
 }
 
 
@@ -126,13 +141,11 @@ ul{
 }
 .welcome-to-nature{
     background: url('./Images/Rectangle\ 46.png');
-    padding: 70px;
+    padding:70px 30px;
     padding-top: 60px;
 
 }
-.welcome-to-nature img{
-    width: 40px;
-}
+
 .welcome-to-nature-text{
     display: flex;
     flex-direction: column;
@@ -145,6 +158,7 @@ ul{
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
+    font-weight: 100;
 }
 .welcome-to-nature-text p{
     width: 500px;
@@ -152,9 +166,9 @@ ul{
     text-align: center;
 }
 .card{
-    border: 2px dotted black;
+    border: 1px dashed black;
     width: 191.69px;
-    height: 200.9px;
+    height: 260px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -167,6 +181,9 @@ ul{
     border: none;
     background-color: #00DBD0;
 }
+.image1{
+    margin-top: 20px;
+}
 .card:hover .image1{
     display: none;
 }
@@ -178,10 +195,11 @@ ul{
 }
 
 .card h4{
-    margin: 15px 0px;
+    margin: 22px 0px;
 }
 .card p{
     margin: 0px;
+    line-height: 20px;
 }
 .welcome-to-nature-cards{
     display: flex;
@@ -191,7 +209,7 @@ ul{
     gap: 36px;
 }
 .presented-images img{
-    width: 108.06px;
+    width: 213.06px;
     object-fit: contain;
     height: 148.76px;
 }
@@ -199,9 +217,10 @@ ul{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    padding: 40px 140px;
-    gap: 20px;
+    justify-content: center;
+    padding: 40px 0px;
+    gap: 15px;
+   
 }
 .profile-image{
     display: flex;
@@ -230,10 +249,12 @@ ul{
     height: 20px;
 }
 .profile{
+    position: relative;
     margin-bottom: 20px;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
+    height: 60vh;
 }
 .profile p{
     width: 568px;
@@ -248,7 +269,7 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    margin-top: 130px;
 }
 
 .subscribe h4{
@@ -256,7 +277,9 @@ ul{
     font-weight: normal;
     margin: 0px;
     text-align: center;
+    margin-bottom: 15px;
 }
+
 /* .subscribe button{
     background-color: #00DBD0;
     width: 167px;
@@ -275,7 +298,10 @@ ul{
 
 .input {
     display: flex;
-    align-items: stretch; /* Make the items stretch to the same height */
+    align-items: stretch;
+    margin-top: 35px;
+    margin-bottom: 35px; /* Make the items stretch to the same height */
+     /* Make the items stretch to the same height */
   }
   
   .input input {
@@ -285,36 +311,45 @@ ul{
     border-radius: 40px;
     padding: 0 20px; /* Adjust padding as needed */
   }
+ 
   .input input:focus {
     border: 1px solid #00DBD0;
     outline: none; /* Optional: Remove the default browser outline */
+  }
+  .subscribe input::placeholder {
+    font-size: 14px;
+    
   }
   
   .input button {
     background-color: #00DBD0;
     color: white;
     border: none;
-    border-radius: 40px;
+    border-radius: 20px;
+    font-size: 16px;
     width: 167px;
     height: 56px; /* Set the height to match the input */
   }
 .profile-subscribe{
-    position: relative;
+    /* background-color: red; */
 }
 .subscribe-img1{
     position: absolute;
-    right: 62%;
-    bottom: 50%;
-    object-fit: none;
+    object-fit: contain;
+    left: 0;
+    top: 34%;
+    max-height: 649px;
     
 }
 .subscribe-img2{
     position: absolute;
-    bottom: 58%;
-    left: 50%;
-    object-fit: none;
-
+    right: 0;
+    object-fit: contain;
+    max-height: 600px;
+    top: -18%;
 }
+
+
 .blog-cards{
     display: flex;
     align-items: center;
@@ -336,7 +371,7 @@ ul{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 .read-our-blog{
     margin: 70px;
@@ -346,10 +381,12 @@ ul{
     font-size: 36px;
     text-align: center;
     margin: 0px;
+    margin-bottom: 15px;
 }
 .read-our-blog-p{
     font-size: 16px;
     width: 568px;
+    
 }
 .blog-cards{
     gap: 50px;
@@ -357,29 +394,23 @@ ul{
 }
 .blog-card{
     width: 278px;
-    height: 360px;
+    height: 440px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+.blog-card p{
+    line-height: 24px;
+}
 
 footer {
-    padding: 4rem;
-    background-position: center;
+    padding: 6rem 2rem;
     background-size: cover;
     background-image: url('/Images/footer\ image.png');
     color: #fff; 
     display: flex;
-    /* padding: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    padding-top: 70px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap; */
+   
   }
   
   .footer-logo img {
@@ -390,8 +421,9 @@ footer {
   
   .footer-logo p {
     font-size: 14px;
-    line-height: 1.5;
     text-align: left;
+    line-height: 23px;
+    width: 500px;
   }
   
   .footer-logo span {
@@ -459,3 +491,6 @@ footer {
   
   /* Add additional styling for font-awesome icons if needed */
   
+  .flex{
+    display: flex;
+  }

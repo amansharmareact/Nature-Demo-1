@@ -5,11 +5,20 @@
   .subscribe-img2 {
     display: none;
   }
+  .mid-section {
+    padding: 15px 30px 0px 30px;
+  }
+  .navbar {
+    padding: 15px 30px 0px 30px;
+  }
 }
 @media screen and (max-width: 992px) {
-  ul {
-    width: 360px;
-    font-size: 14px;
+  nav ul {
+    width: 450px;
+  }
+  nav ul li{
+    font-size: 18px;
+
   }
   .navbar {
     padding: 15px 30px 0px 30px;
@@ -23,13 +32,25 @@
     z-index: 999999;
   }
   .text-section p {
-    font-size: 18px;
+    font-size: 15px;
+    width: 300px;
   }
+  .text-section h1 {
+    font-size: 44px;
+  }
+  .text-section h2{
+    font-size: 30px;
+  }
+  .footer-logo p {
+  
+    width: 400px;
+  }
+  .flex{
+    flex-direction: column;
+   }
 }
 @media screen and (max-width: 768px) {
-  ul {
-    width: 390px;
-  }
+ 
   .header-photo img {
     display: none;
   }
@@ -37,7 +58,7 @@
     width: 90%;
   }
   .welcome-to-nature {
-    margin: 20px;
+    padding-top: 0px;
   }
   .presented-images {
     padding: 15px 20px;
@@ -54,34 +75,37 @@
   .profile-subscribe p {
     width: 100%;
   }
-  .subscribe input {
-    width: 70px;
-    height: 36px;
-    padding: 0px 32px;
-  }
-  .subscribe input::placeholder {
-    font-size: 12px;
-    
-  }
-  .subscribe button{
-    width: 70px;
-    height: 36px;
-    font-size: 12px;
-  }
+  
   .about-us,
   .follow-us {
     
     width: 130px;
   }
-  .follow-us ul {
-    flex-direction: column;
-  }
+ 
+  .read-our-blog{
+    height: 100%;
+
+}
+
+.text-section p {
+  width: 100%;
+}
+.navbar-section{
+  height: 450px;
+}
+.read-our-blog {
+  margin: 30px;
+}
+.read-our-blog-text {
+ 
+  margin-bottom: 25px;
+}
+
+
 }
 @media screen and (max-width: 700px) {
-  ul {
-    width: 300px;
-    font-size: 14px;
-  }
+
+  
   .navbar {
     padding: 15px 28px 0px 28px;
   }
@@ -90,10 +114,7 @@
   }
 }
 @media screen and (max-width: 576px) {
-  ul {
-    width: 280px;
-    font-size: 12px;
-  }
+
   .navbar {
     padding: 10px 10px 0px 10px;
     justify-content: center;
@@ -108,14 +129,29 @@
   }
   .welcome-to-nature-cards {
     margin-top: 10px;
-    gap: 8px;
+    gap: 12px;
   }
-  .presented-images {
-    justify-content: center;
+  footer{
+    flex-direction: column;
+  }
+  .subscribe input {
+    width: 160px;
+    height: 36px;
+    padding: 0px 32px;
   }
   
+  .subscribe button{
+    width: 88px;
+    height: 36px;
+    font-size: 14px;
+  }
+  .read-our-blog {
+    margin: 12px;
 }
-@media screen and (max-width: 450px) {
+ 
+  
+}
+@media screen and (max-width: 768px) {
     
     .list-items{
      display: none;
@@ -138,12 +174,9 @@
       .menu-checkbox:checked + .menu + .list-items {
         display: flex;
       }
+     
+      .text-section {
+        padding-top: 30px;
+    }
     
   }
-@media screen and (max-width: 350px) {
-  ul {
-    width: 280px;
-    font-size: 12px;
-  }
-  
-}
